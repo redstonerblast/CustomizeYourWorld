@@ -1,0 +1,207 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "BreakBlock",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "break_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CustomgameruleCommandExecuted",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "customgamerule_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Customgamerule",
+      "type": "command",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "customgamerule"
+    },
+    {
+      "name": "PlaceBlock",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "place_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CanTame",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "can_tame",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CanTrample",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "can_trample",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CanChat",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "can_chat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "blockbreak",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "placeblock",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "bonemealuse",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "creeperblowup",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "endermanpickup",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "dimensiontravel",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "canchat",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "cantame",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "farmtrample",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "explosions",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "workspaceSettings": {
+    "modid": "cyfone",
+    "modName": "ConfigYourWorld",
+    "version": "1.0.0",
+    "author": "conno, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.cyfone",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000547520
+}
