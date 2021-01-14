@@ -62,8 +62,60 @@ public class CustomgameruleCommandExecutedProcedure extends CyfoneModElements.Mo
 			CyfoneModVariables.MapVariables.get(world).blockbreak = (double) (booleanstate);
 			CyfoneModVariables.MapVariables.get(world).syncData(world);
 		} else {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Invalid Command Paramaters"), (false));
+			if ((((new Object() {
+				public String getText() {
+					String param = (String) cmdparams.get("0");
+					if (param != null) {
+						return param;
+					}
+					return "";
+				}
+			}.getText())).equals("placeBlock"))) {
+				CyfoneModVariables.MapVariables.get(world).placeblock = (double) (booleanstate);
+				CyfoneModVariables.MapVariables.get(world).syncData(world);
+			} else {
+				if ((((new Object() {
+					public String getText() {
+						String param = (String) cmdparams.get("0");
+						if (param != null) {
+							return param;
+						}
+						return "";
+					}
+				}.getText())).equals("chat"))) {
+					CyfoneModVariables.MapVariables.get(world).canchat = (double) (booleanstate);
+					CyfoneModVariables.MapVariables.get(world).syncData(world);
+				} else {
+					if ((((new Object() {
+						public String getText() {
+							String param = (String) cmdparams.get("0");
+							if (param != null) {
+								return param;
+							}
+							return "";
+						}
+					}.getText())).equals("canTrample"))) {
+						CyfoneModVariables.MapVariables.get(world).farmtrample = (double) (booleanstate);
+						CyfoneModVariables.MapVariables.get(world).syncData(world);
+					} else {
+						if ((((new Object() {
+							public String getText() {
+								String param = (String) cmdparams.get("0");
+								if (param != null) {
+									return param;
+								}
+								return "";
+							}
+						}.getText())).equals("canTame"))) {
+							CyfoneModVariables.MapVariables.get(world).cantame = (double) (booleanstate);
+							CyfoneModVariables.MapVariables.get(world).syncData(world);
+						} else {
+							if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+								((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Invalid Command Paramaters"), (false));
+							}
+						}
+					}
+				}
 			}
 		}
 	}
